@@ -6,11 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>String operations</title>
+    <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body>
+<body class="ps-2">
     <h2>String manipulation</h2>
-
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="content ps-3">
+        <code>
+            var name = "John Doe";
+        </code><br>
+        <code>
+            console.log(`Your name is ${name.length} characters in length`);
+        </code><br>
+        <code>
+            var msg = `<span class="text-primary">${</span>name<span class="text-primary">}</span> is a good person!`;
+        </code><br>
+        <code>
+            console.log(msg);
+        </code><br>
+        <code>
+            var description = 'this is a "good" book';
+        </code><br>
+        <code>
+            console.log(description);
+        </code><br>
+        <code>
+            description = "this is a 'good' book";
+        </code><br>
+        <code>
+            console.log(description);
+        </code><br>
+        <code>
+            description = `this is a 'good' "book"`;
+        </code><br>
+        <code>
+            console.log(description);
+        </code><br>
+        <code>
+            description = "this\tis a \\n'good book'";
+        </code><br>
+        <code>
+            console.log(description);
+        </code><br>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+    <ul>
+        <li>\t creates 5 spaces</li>
+        <li>\n create a new line</li>
+        <li>\\n will only print <span class="text-danger">backslash n</span></li>
+    </ul>
+    <img src="images/Screenshot_5.png" alt="Screenshot 5" class="ps-3"><br><br>
+    <a href="index.html" class="btn btn-primary">Back</button></a>
     <script>
         var name = "John Doe";
         console.log(`Your name is ${name.length} characters in length`);

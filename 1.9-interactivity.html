@@ -6,10 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactivity in JS</title>
+    <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body>
+<body class="ps-3">
     <p>Interactivity in JS</p>
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="content ps-3">
+        <code>
+            function add() {
+        </code><br>
+        <code class="text-success">
+            //prompt returns the input value
+        </code><br>
+        <code class="text-success">
+            //let num1 = prompt("Enter the value of 1st number");
+        </code><br>
+        <code>
+            let num1 = prompt("Enter the value of 1st number", "2.5");
+        </code><br>
+        <code>
+            num1 = parseFloat(num1);//convert String to Number
+        </code><br>
+        <code>
+            let num2 = prompt("Enter the value of 2nd number");
+        </code><br>
+        <code>
+            num2 = parseFloat(num2);//convert String to Number
+        </code><br>
+        <code>
+            let result = num1 + num2;
+        </code><br>
+        <code>
+            alert(`Result of adding <span class="text-primary">${</span>num1<span class="text-primary">}</span> and <span class="text-primary">${</span>num2<span class="text-primary">}</span> is <span class="text-primary">${</span>result<span class="text-primary">}</span>`);//its used for notification purpose
+        </code><br>
+        <code class="text-success">
+            //alert does not return any value
+        </code><br>
+        <code>
+        }
+        </code><br>
+        <code class="text-success">
+            //add();
+        </code><br>
+        <code>
+            function deleteCart() {
+        </code><br>
+        <code class="text-success">
+            //confirm will help user to decide on an action
+        </code> <br>
+        <code class="ps-2">
+            let input = confirm("Are you sure you want to delete the cart?");
+        </code><br>
+        <code class="ps-2">
+            if (input) {
+        </code><br>
+        <code class="ps-3">
+            alert("Cart has been deleted successfully!");
+        </code><br>
+        <code class="ps-2">
+            } else {
+        </code><br>
+        <code class="ps-3">
+            alert("Cart cannot be deleted!");
+        </code>  <br>
+        <code class="ps-2">
+            }
+        </code><br>
+        <code>
+            }
+        </code><br>
+        <code>
+            deleteCart();
+        </code>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+    <a href="index.html" class="btn btn-primary">Back</button></a>
     <script>
         function add() {
             //prompt returns the input value

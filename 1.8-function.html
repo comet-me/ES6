@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Function in JS</title>
+    <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body>
+<body class="ps-3">
     <h2>Function in JS</h2>
     <ul>
         <li>Function helps us avoid repeating code over and over again</li>
@@ -18,6 +19,106 @@
         <li>Function may of may not have a return type</li>
         <li>Code inside a function only gets executed when its called</li>
     </ul>
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="content ps-3">
+        <code class="text-success">
+            //defination of a function
+        </code><br>
+        <code class="text-success">
+            //function with no parameter
+        </code><br>
+        <code>
+            function addNumbers() {
+        </code><br>
+        <code class="ps-1">
+            console.log(5 + 7);
+        </code><br>
+        <code>
+        }
+        </code><br>
+        <code>
+            addNumbers();<span class="text-success">//calling of function</span>
+        </code><br><hr>
+        <code>
+            <span class="text-success">//function with 2 parameters , num1 and num2</span>
+        </code><br>
+        <code>
+            function addTwoNumbers(num1, num2) {
+        </code><br>
+        <code>
+            let result = num1 + num2;
+        </code><br>
+        <code>
+            console.log(result);<span class="text-success">//this function does not return anything to the callers</span>
+        </code><br>
+        <code>
+        }
+        </code><br>
+        <code>
+            addTwoNumbers(3, 4);<span class="text-success">//calling of function with parameters</span>
+        </code><br><hr>
+        <code>
+            <span class="text-success">//function with 2 parameters , num1 and num2</span>
+        </code><br>
+        <code>
+            function addTwoNumbersAndReturn(num1, num2) {
+        </code>    <br>
+        <code class="text-success">
+            <span class="text-success">//debugger;</span>
+        </code><br>
+        <code>
+            let result = num1 + num2;
+        </code><br>
+        <code>
+            return result;<span class="text-success">// this function return the output to the caller</span>
+        </code><br>
+        <code>
+            console.log("this will not execute as its written after return statement");<span class="text-success">//this line will not get executed becz function has already return the control</span>
+        </code><br>
+        <code>
+        }
+        </code><br>
+        <code>
+            addTwoNumbers(8, 9);<span class="text-success">//calling of function with parameters</span>
+        </code><br>
+        <code>
+            let output = addTwoNumbersAndReturn(99, 1);<span class="text-success">//calling of function with parameters and accepting the return value</span>
+        </code><br>
+        <code>
+            console.log(output);
+        </code><br><hr>
+        <code>
+            <span class="text-success">//default value of parameter is only used if the value for that parameter is not passed by the caller</span>
+        </code><br>
+        <code>
+            function add2NumWithReturnAndDefaultValue(num1, num2 = 5) {
+        </code><br>
+        <code>
+            return num1 + num2;
+        </code>    <br>
+        <code>
+        }
+        </code><br>
+        <code>
+            let out1 = add2NumWithReturnAndDefaultValue(22, 33);
+        </code><br>
+        <code>
+            console.log(out1);<span class="text-success">//55</span>
+        </code><br>
+        <code>
+            out1 = add2NumWithReturnAndDefaultValue(22);<span class="text-success">//as num2 value is not passed so it will take default value as 5</span>
+        </code><br>
+        <code>
+            console.log(out1);<span class="text-success">//27</span>
+        </code><br>
+    </div>
+    <code class="text-success">
+        &#60script&#62
+    </code><br>
+    <img src="images/Screenshot_7.png" class="ps-2" alt=""><br>
+    <a href="index.html" class="btn btn-primary">Back</button></a>
     <script>
 
         //defination of a function
