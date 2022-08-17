@@ -6,11 +6,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Objects in JS</title>
+    <link rel="stylesheet" href="../dist/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body>
+<body class="ps-3">
     <h1>Objects in JS</h1>
-
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="content ps-3">
+        <code>
+            let var1 = 22;
+        </code><br>
+        <code>
+            console.log("Type of var1 is " + typeof (var1));
+        </code><br>
+        <code>
+            let var2 = "John";
+        </code><br>
+        <code>
+            console.log("Type of var2 is " + typeof (var2));
+        </code><br>
+        <code>
+            let var3 = 40.67;
+        </code><br>
+        <code>
+            console.log("Type of var3 is " + typeof (var3));
+        </code><br>
+        <code>
+            let var4 = false;
+        </code><br>
+        <code>
+            console.log("Type of var4 is " + typeof (var4));
+        </code><br>
+        <code>
+            let var5; <span class="text-success">//default of js variable is undefined...if(var5) => false</span>
+        </code><br>
+        <code>
+            console.log("Type of var5 is " + typeof (var5));
+        </code><br>
+        <code>
+            let var6 = undefined;
+        </code><br>
+        <code>
+            console.log("Type of var6 is " + typeof (var6));
+        </code><br>
+        <code>
+            let var7 = null;
+        </code><br>
+        <code>
+            console.log("Type of var7 is " + typeof (var7));
+        </code>
+        <code class="text-success">
+            //Create my on Data type and its Object
+        </code><br>
+        <code>
+            let student = {
+        </code>    <br>
+        <code>
+            name: "Peter",
+        </code><br>
+        <code>
+            rollNo: 567,
+        </code><br>
+        <code>
+            age: 23,
+        </code><br>
+        <code>
+            "dept name": "Phy"
+        </code><br>
+        <code>
+        };
+        </code><br>
+        <code>
+            console.log(student);
+        </code><br>
+        <code>
+            console.log(typeof (student));
+        </code><br>
+        <code>
+            console.log(student.name);
+        </code>   <br>
+        <code>
+            console.log(student['name']);
+        </code><br>
+        <code>
+            console.log(student['dept name']);
+        </code>    <br>
+        <code class="text-success">
+            //Object destructing
+        </code><br>
+        <code>
+            const { rollNo, age } = student;
+        </code><br>
+        <code>
+            console.log(rollNo);
+        </code>    <br>
+        <code>
+            console.log(age);
+        </code><br>
+    </div>
+    <code class="text-success">
+        &#60script&#62
+    </code><br>
+    <img src="../images/Screenshot_8.png" class="ps-2" alt=""><br>
+    <a href="../index.html" class="btn btn-primary">Back</button></a>
     <script>
         let var1 = 22;
         console.log("Type of var1 is " + typeof (var1));
