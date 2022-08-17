@@ -6,11 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ES6 spread operator</title>
+    <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body>
+<body class="ps-3">
     <h2>ES6 spread operator</h2>
-
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="row">
+        <div class="col lg-6">
+            <code>
+                const numArray1 = [11, 22, 33];
+            </code><br>
+            <code>const numArr2 = [99, 01, 44];</code>
+        </div>
+        <div class="col-lg-6">
+            <img src="images/Screenshot_14.png" alt="">
+        </div>
+        <div class="col lg-6">
+            <code>const newArray = [...numArray1, ...numArr2];</code><br>
+            <code>console.log(newArray);</code><code class="text-success">//spread operator joins arrays or adds new items to existing array</code><br><br>
+            <code>const newArr2 = [...numArray1, 66, 23];</code><br>
+            <code>console.log(newArr2);</code>
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+    <a href="index.html" class="btn btn-primary">Back</button></a>
     <script>
         const numArray1 = [11, 22, 33];
         const numArr2 = [99, 01, 44];

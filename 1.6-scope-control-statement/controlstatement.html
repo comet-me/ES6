@@ -6,11 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>If Else and Switch case</title>
+    <link rel="stylesheet" href="../dist/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body>
+<body class="ps-3">
     <h2>If Else and Switch case, decision based program flow</h2>
-
+    <code class="text-success">
+        &#60script&#62
+    </code>  
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>let age = 18;</code><br><br>
+            <code>if (age > 18) {</code><br>
+            <code class="text-success">//debugger;</code><br>
+            <code>console.log("Allowed for driving");</code><br>
+        </div>
+        <div class="col-lg-6">
+            <img src="../images/Screenshot_15.png" alt="">
+        </div>
+        <div class="col-lg-6">
+        <code>} else if (age === 18) {//=== checks the value and also the data type for doing comparision, but == only checks the value</code><br>
+            <code>console.log("You can now apply for driving license");</code><br>
+        <code>}</code><br>
+        <code>else {</code><br>
+            <code>console.log("Not allowed for driving");</code><br>
+        <code>}</code><br>
+        </div>
+    </div>
+    <div class="row ps-3">
+        <div class="col lg-6">
+            <code>const day = 3;</code><br>
+        <code>switch (day) {</code><br>
+            <code>case 1:</code><br>
+                <code>console.log("Today is Monday");</code><br>
+                <code>break;</code><br><br>
+            <code>case 3:</code><br>
+                <code>console.log("Today is Wednesday");</code><br>
+                <code>break;</code><br>
+        </div>
+        <div class="col lg-6">
+            <code>case 6:</code><br>
+                <code>console.log("Today is Saturday");</code><br>
+                <code>break;</code><br><br>
+            <code>default:</code><br>
+                <code>console.log("I dont know what day it is today");</code><br>
+                <code>break;</code><br>
+        <code>}</code><br>
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code>    <br>
+    <a href="../index.html" class="btn btn-primary">Back</button></a>
     <script>
         let age = 18;
 

@@ -6,11 +6,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>setInterval in JS</title>
+    <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body id="bodyTag">
+<body id="bodyTag" class="ps-3">
     <h2>setInterval function JS</h2>
     <div id="textArea">Time in seconds: <span id="seconds"></span> </div>
+    <code>
+        &#60div id="textArea"&#62Time in seconds: &#60span id="seconds"&#62 &#60/span&#62 &#60/div&#62;
+    </code><br>
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                function display(empName, empDept) {
+            </code><br>
+            <code>
+                console.log("Name: " + empName + " & Department: " + empDept);
+            </code><br>
+            <code>
+            }
+            </code><br>
+            <code class="text-success">
+                //display("John", "Phy");
+                <br>//display("Peter", "Chemistry");<br>
+            </code>
+            <code class="text-success">
+                //setInterval(display, 2000);
+                <br>//setInterval(display, 4000, "John", "PHY");//this function helps us execute more than once another function after a certain time(in ms)
+            </code><br>
+            <code>
+                let count = 0;
+            </code><br>
+            <code>
+                setInterval(function () {
+            </code><br>
+            <code>
+                count++;
+            </code><br>
+            <code>
+                document.querySelector('#seconds').innerHTML = count;
+            </code><br>
+            <code>
+                let color = `#${count}00${count}00`;
+            </code><br>
+            <code>
+                document.querySelector('#textArea').style.backgroundColor = color;
+            </code><br>
+            <code>
+            }, 1000);
+            </code><br>
+        </div>
+        <div class="col-lg-6">
+            <img src="images/Screenshot_12.png" alt="">
+        </div>
+    </div>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                let intervalId = setInterval(display, 5000, "John", "PHY");
+            </code><br>
+            <code>
+                console.log(`Interval Id is: ${intervalId}`);
+            </code><br>
+            <code class="text-success">
+                //let's cancel the 10sec timeout with the help of intervalId
+            </code><br>
+            <code>
+                clearInterval(intervalId);
+            </code>
+        </div>
+        <div class="col-lg-6">
+            <a href="index.html" class="btn btn-primary">Back</button></a>
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code>
     <script>
         function display(empName, empDept) {
             console.log("Name: " + empName + " & Department: " + empDept);
