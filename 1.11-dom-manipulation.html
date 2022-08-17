@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulation with JS</title>
+    <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body>
+<body class="ps-3">
     <div id="header" class="layout">
         <h2>Header section</h2>
     </div>
@@ -31,6 +32,99 @@
     <div id="footer" class="layout">
         @All rights reserved.
     </div>
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                let mainElement = document.getElementById('main');
+            </code><br>
+            <code>
+                console.log(mainElement);
+            </code><br>
+            <code>
+                let fullName = document.getElementById('fullName');
+            </code><br>
+            <code>
+                console.log(fullName.value);
+            </code><br>
+            <code>
+                let rightElement = document.getElementById('right');
+            </code><br>
+            <code>
+                console.log(rightElement);
+            </code><br>
+            <code>
+                console.log(rightElement.innerHTML);
+            </code><br>
+            <code>
+                let layoutElements = document.getElementsByClassName('layout');
+            </code><br>
+            <code>
+                console.log(layoutElements);
+            </code><br>
+            <code>
+                console.log(layoutElements[2]);
+            </code><br>
+            <code>
+                let tagElements = document.getElementsByTagName('li');
+            </code><br>
+            <code>
+                console.log(tagElements);
+            </code><br>
+            <code>
+                console.log(tagElements[2]);
+            </code><br>
+            <code>
+                console.log(tagElements[2].innerHTML);
+            </code><br>
+            <code>
+                tagElements[2].innerHTML = "MyOrders";
+            </code><br>
+        </div>
+        <div class="col-lg-6">
+            <code class="text-success">
+                //let selectorQuery = document.querySelector('section');//returns the 1st matching instance
+                <br>
+                //console.log(selectorQuery);
+                <br>
+                //let selectorQuery = document.querySelector('.layout');//returns the 1st matching instance
+                <br>
+                //console.log(selectorQuery);
+                <br>
+                //let selectorQuery = document.querySelector('#left');//returns the 1st matching instance
+                <br>
+                //console.log(selectorQuery);
+                <br>//let selectorQuery = document.querySelector('#left > ul');//returns the 1st matching instance
+                <br>//console.log(selectorQuery);<br>
+                <br>//let selectorQuery = document.querySelector('#left > ul > li');//returns the 1st matching instance
+                <br>//console.log(selectorQuery);<br>
+                <br>//let selectorQuery = document.querySelector('#left > .left-menu > li');//returns the 1st matching instance
+                <br>//console.log(selectorQuery);
+            </code><br><br>
+        </div>
+    </div>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                let selectorQuery = document.querySelectorAll('#left > .left-menu > li');<span class="text-success">//returns all the matching instance</span> 
+            </code><br>
+            <code>
+                console.log(selectorQuery);
+            </code><br>
+            <code>
+                selectorQuery[1].style.color = 'red';<span class="text-success">//makes the font color to red</span>
+            </code><br>
+        </div>
+        <div class="col-lg-6">
+            <img src="images/Screenshot_11.png" alt="">
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+    <a href="index.html" class="btn btn-primary">Back</button></a>
 
     <script>
         let mainElement = document.getElementById('main');

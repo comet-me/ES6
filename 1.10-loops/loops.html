@@ -6,10 +6,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Looping and Iteration in JS</title>
+    <link rel="stylesheet" href="../dist/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body>
+<body class="ps-3">
     <h2>Looping and Iteration in JS</h2>
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="row ps-3">
+        <div class="content col-lg-6">
+            <code class="text-success">
+                //Loops helps us do the same thing again and again
+            </code><br>
+            <code>
+                for (let count = 0; count < 5; count++) {
+            </code><br>
+            <code>
+                console.log(count);
+            </code><br>
+            <code>
+            }
+            </code><br>
+            <code class="text-success">
+                //iterate over array
+            </code><br>
+            <code>
+                let names = ["John", "Peter", "Jane", "Mike"];
+            </code><br>
+            <code>
+                for (let i = 0; i < names.length; i++) {
+            </code><br>
+            <code>
+                console.log(names[i]);
+            </code><br>
+            <code>
+                }
+            </code><br>
+            <code class="text-success">
+                //iterate over array using forEach loop
+            </code><br>
+            <code>
+                console.log("*******iterate over array using forEach loop********")
+            </code><br>
+            <code>
+                names.forEach(function test(n) {
+            </code><br>
+            <code>
+                console.log(n);
+            </code><br>
+            <code>
+            });
+            </code><br>
+            <code class="text-success">
+                //iterate over array using for of loop
+            </code><br>
+            <code>
+                console.log("*******iterate over array using for of loop********")
+            </code><br>
+            <code>
+                for (n of names) {
+            </code><br>
+            <code>
+                console.log(n);
+            </code><br>
+            <code>
+            }
+            </code><br>
+            <code class="text-success">
+                //iterate over an object with for in loop
+            </code><br>
+            <code>
+                let student = {
+            </code><br>
+            <code>
+                name: "Peter",
+            </code><br>
+            <code>
+                rollNo: 567,
+            </code><br>
+            <code>
+                age: 23,
+            </code><br>
+            <code>
+                dept: "Phy"
+            </code><br>
+            <code>
+            };
+            </code><br>
+        </div>
+        <div class="col-lg-6">
+            <img src="../images/Screenshot_9.png" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <code>
+                console.log("*******iterate over an object with for in loopR********")
+            </code><br>
+            <code>
+                for (key in student) {
+            </code><br>
+            <code>
+                console.log("Key is " + key + " Value is " + student[key]);
+            </code><br>
+            <code>
+            }
+            </code><br>
+            <code class="text-success">
+                //while loop in JS
+            </code><br>
+            <code class="text-success">
+                //1.0 initialization , 2. Condition checking , 3. Body execution , 4. Updation
+            </code><br>
+            <code>
+                console.log("*******iterate with while loop********")
+            </code><br>
+            <code>
+                let c = 0;
+            </code><br>
+            <code>
+                while (c < 5) {
+            </code><br>
+            <code>
+                console.log(c);
+            </code><br>
+            <code>
+                c++;
+            </code><br>
+            <code>
+            }
+            </code><br>
+            <code class="text-success">
+                //do while loop in JS
+            </code><br>
+            <code>
+                console.log("*******iterate with do while loop********")
+            </code><br>
+            <code>
+                let i = 0;
+            </code><br>
+            <code>
+                do {
+            </code><br>
+            <code>
+                console.log(i);
+            </code><br>
+            <code>
+                i++;
+            </code><br>
+            <code>
+            } while (i < 5);
+            </code><br>
+        </div>
+        <div class="col-lg-6">
+            <img src="../images/Screenshot_10.png" alt="">
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+    <a href="../index.html" class="btn btn-primary">Back</button></a>
     <script src="./loops.js"></script>
 </body>
 

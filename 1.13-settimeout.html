@@ -5,9 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>setTimeout function JS</title>
+    <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.css">
 </head>
 <body id="bodyTag">
     <h2>setTimeout function JS</h2>
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                function display(empName, empDept){
+            </code><br>
+            <code>
+                console.log("Name: "+empName+ " & Department: "+empDept);
+            </code><br>
+            <code>
+            }
+            </code><br>
+            <code class="text-success">
+                //display("John", "Phy");
+                <br>//display("Peter", "Chemistry");<br>
+                <br>//setTimeout(display, 4000);
+                <br>//setTimeout(display, 4000, "John", "PHY");//this function helps us execute only once another function after a certain time(in ms)
+            </code><br><br>
+            <code>
+                setTimeout(function(){
+            </code><br>
+            <code>
+                document.querySelector('#bodyTag').style.backgroundColor = 'blue';
+            </code><br>
+            <code>
+            }, 6000);
+            </code><br>
+        </div>
+    </div>
+    <div class="row ps-3">
+        <div class="col lg-6">
+            <code class="text-success">
+                //send otp, otp should expire in 30 secs, but user enters the otp within 30secs
+                <br>// than you want to cancle the setTimeout so that otp should not expire <br>
+            </code>
+            <code>
+                let timeoutId = setTimeout(display, 10000, "John", "PHY");
+            </code><br>
+            <code>
+                console.log(`Timeout Id is: ${timeoutId}`);
+            </code><br>
+            <code class="text-success">
+                //let's cancel the 10sec timeout with the help of timeoutId
+            </code>    <br>
+            <code>
+                clearTimeout(timeoutId);
+            </code>
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+    <a href="index.html" class="btn btn-primary">Back</button></a>
     <script>
         function display(empName, empDept){
             console.log("Name: "+empName+ " & Department: "+empDept);

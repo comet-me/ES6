@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event and Event Listener in JS</title>
+    <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body id="bodyElement">
+<body id="bodyElement" class="ps-3">
     <button id="magic" onclick="magic()">Magic</button>
     <div id="header" class="layout">
         <h2 id="headerText" onmouseover="changeColor()" onmouseout="changeColor()">Header section</h2>
@@ -34,7 +35,109 @@
     <div id="footer" class="layout">
         @All rights reserved.
     </div>
-
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                function magic() {
+            </code><br>
+            <code>
+                let body = document.getElementById('bodyElement');
+            </code><br>
+            <code>
+                if (body.style.backgroundColor !== 'skyblue') {
+            </code>    <br>
+            <code>
+                body.style.backgroundColor = "skyblue";
+            </code><br>
+            <code>
+            } else {
+            </code><br>
+            <code class="ps-2">
+                body.style.backgroundColor = "#ffffff";
+            </code><br>
+            <code class="ps-1">
+            }
+            </code><br>
+            <code>
+            }
+            </code><br>
+            <code>
+                let fN = document.getElementById('fullName');
+            </code>    <br>
+            <code>
+                fN.addEventListener('change', function test() {
+            </code><br>
+            <code class="text-success">
+                //alert(fN.value);
+            </code><br>
+            <code>
+                document.getElementById('someText').innerText = fN.value;
+            </code><br>
+            <code>
+            });
+            </code>
+        </div>
+    </div>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                function changeColor() {
+            </code><br>
+            <code class="text-success">
+                //alert("Hello");
+            </code><br>
+            <code>
+                let hT = document.getElementById('headerText');
+            </code><br>
+            <code>
+                if (hT.style.color !== 'red') {
+            </code><br>
+            <code class="ps-1">
+                hT.style.color = 'red';
+            </code><br>
+            <code>
+            } else {
+            </code><br>
+            <code class="ps-2">
+                hT.style.color = 'black';
+            </code><br>
+            <code class="ps-1">
+            }
+            </code><br>
+            <code>
+            }
+            </code><br>
+            <code>
+                function changeText() {
+            </code><br>
+            <code>
+                let hT = document.getElementById('headerText');
+            </code><br>
+            <code>
+                let hTi = document.getElementById('headerTextInput');
+            </code><br>
+            <code>
+                hT.innerText = hTi.value;
+            </code><br>
+            <code>
+                hT.style.fontSize = '30px';
+            </code><br>
+            <code>
+                hTi.value = '';
+            </code><br>
+            <code>
+            }
+            </code><br>
+        </div>
+    </div>
+       
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+    <a href="index.html" class="btn btn-primary">Back</button></a>
     <script>
 
         function magic() {
