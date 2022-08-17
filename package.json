@@ -1,0 +1,22 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "JavaScript 6",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comet-me/ES6.git"
+  },
+  "author": "Don Romeo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comet-me/ES6/issues"
+  },
+  "homepage": "https://github.com/comet-me/ES6#readme",
+  "devDependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
