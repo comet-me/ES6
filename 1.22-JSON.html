@@ -5,11 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON</title>
+    <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.css">
 </head>
-<body>
+<body class="ps-3 mt-3">
     <h2>JSON stands for JavaScript Object Notation</h2>
     <p>JSON is used for exchange data over network/internet</p>
-
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                <br> let empOne = { name: "John", age: 22, address: { city: "Xyz", pincode: 22334}};
+                <br> console.log(empOne); <br>
+                <br> console.log(empOne.address.city);
+                <br> let empStr = JSON.stringify(empOne); <span class="text-success">//converts JSON object to string</span>
+                <br> console.log(empStr);
+                <br> console.log(empStr.length);
+                <br> <span class="text-success">//console.log(empStr.address.city);</span> <br>
+                <br> let myObj = JSON.parse(empStr); <span class="text-success">//converts a valid json string to json object</span>
+                <br> console.log(myObj.address.city); <br><br>
+            </code>
+        </div>
+        <div class="col-lg-6">
+            <h3>Console Log Output</h3>
+            <img src="images/Screenshot_24.png" alt="">
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+    <a href="index.html" class="btn btn-primary">Back</button></a>
     <script>
         let empOne = { name: "John", age: 22, address: { city: "Xyz", pincode: 22334}};
         console.log(empOne);

@@ -6,11 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array filter in js</title>
+    <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body>
+<body class="ps-3">
     <h2>Array filter in js</h2>
-
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>let ageArray = [16, 32, 12, 80, 54];</code><br>
+        <code class="text-success">//I want all the people who are eligible for voting (age>18)</code><br>
+        <code>function checkEligibility(age) {</code><br>
+            <code>return age > 18;</code><br>
+        <code>}</code><br>
+        <code>let eligibleArr = ageArray.filter(checkEligibility);</code><br>
+        <code>console.log("Eligible for voting");</code><br>
+        <code>console.log(eligibleArr);</code><br>
+        <code>function checkNonEligibility(age) {</code><br>
+            <code>return age < 18;</code><br>
+        <code>}</code><br>
+        <code>let nonEligibleArr = ageArray.filter(checkNonEligibility);</code><br>
+        <code>console.log("Not Eligible for voting");</code><br>
+        <code>console.log(nonEligibleArr);</code><br>
+        </div>
+        <div class="col-lg-6">
+            <h3>Console Output</h3>
+            <img src="images/Screenshot_20.png" alt="">
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+    <a href="index.html" class="btn btn-primary">Back</button></a>
     <script>
         let ageArray = [16, 32, 12, 80, 54];
 

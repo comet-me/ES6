@@ -5,15 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random number generator</title>
+    <link rel="stylesheet" href="../dist/bootstrap/dist/css/bootstrap.css">
 </head>
-<body>
+<body class="ps-3">
     <h2>Random number generator</h2>
     <input type="text" id="num1" placeholder="Enter min">&nbsp;
     <input type="text" id="num2" placeholder="Enter max">
     <br><br>
-        <button id="calculate" onclick="randomNoGenerator()">Calculate</button> 
-        <h1 id="result"></h1>
+    <button id="calculate" onclick="randomNoGenerator()">Calculate</button> 
+    <h1 id="result"></h1>
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                <br>const randomNoGenerator = () => {
+                <br><span class="ps-2"></span>let min = document.querySelector("#num1").value;
+                <br><span class="ps-2"></span>let max = document.querySelector("#num2").value; <br>
+                <br><span class="ps-2"></span>if (min === '' || max === '') {
+                <br><span class="ps-3"></span>    alert("One or more fields are empty");
+                <br><span class="ps-3"></span>    return;
+                <br><span class="ps-2"></span>} <br>
+                <br><span class="ps-2"></span>min = parseInt(min);
+                <br><span class="ps-2"></span>max = parseInt(max); <br>
+                <br><span class="ps-2"></span>let randomNo = Math.floor(Math.random() * (max - min + 1) + min);
+                <br><span class="ps-2"></span>document.querySelector("#result").innerHTML = `Result is : ${Math.round(randomNo)}`;
+                <br>} <br>
+            </code>
+        </div>
+        <div class="col-lg-6">
 
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+   
+
+    <a href="../index.html" class="btn btn-primary">Back</button></a>
     <script src="./random.js"></script>
 </body>
 </html>

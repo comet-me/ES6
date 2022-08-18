@@ -5,10 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math object in JS</title>
+    <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.css">
 </head>
-<body>
+<body class="ps-3">
     <h2>Math object in JS</h2>
-
+    <code class="text-success">
+        &#60script&#62        
+    </code><br>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                <br>let mathObj = Math;
+                <br>console.log(mathObj);
+                <br>console.log("Value of PI is "+Math.PI); <br>
+                <br>console.log("Rounding "+Math.round(24.4));
+                <br>console.log("Expontial power 5 to the power of 3 is "+ Math.pow(5,3));
+                <br>console.log("Square root of 144 is "+Math.sqrt(144)); <br>
+                <br>console.log("Ceil "+Math.ceil(22.8));
+                <br>console.log("Floor "+Math.floor(22.8)); <br>
+                <br>console.log(Math.abs(-6)); <br>
+                <br>console.log("Sin(pi) is "+Math.sin(Math.PI/2));
+                <br>console.log("Cos(pi) is "+Math.cos(Math.PI/2));
+                <br>console.log("tan(pi) is "+Math.tan(Math.PI/2));
+            </code>
+        </div>
+        <div class="col-lg-6">
+            <h3>Console Log Output</h3>
+            <img src="images/Screenshot_23.png" alt="">
+        </div>
+    </div>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                <br> console.log("Max number is "+Math.max(21, 2, 45, 67));
+                <br> console.log("Min number is "+Math.min(21, 2, 45, 67)); <br>
+                <br> let randomNo = Math.random();<span class="text-success">//gives a random number between 0 and 1</span>
+                <br> console.log(randomNo); <br>
+                <br> function randomIntFromInterval(min, max) { <span class="text-success">// min and max included </span>
+                <br><span class="ps-2"></span>return Math.floor(Math.random() * (max - min + 1) + min)
+                <br> } <br>
+                <br> const rndInt = randomIntFromInterval(1, 200);
+                <br> console.log(rndInt);
+            </code>
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62        
+    </code><br>
+    <a href="index.html" class="btn btn-primary">Back</button></a>
     <script>
         let mathObj = Math;
         console.log(mathObj);

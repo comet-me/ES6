@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Window & Document object in JS</title>
+    <link rel="stylesheet" href="../dist/bootstrap/dist/css/bootstrap.css">
 </head>
-<body>
+<body class="ps-3">
     <h2>Window & Document object in JS</h2>
     <button onclick="add()">Add</button>
     <button onclick="getStorageData()">Get Data</button>
@@ -15,6 +16,96 @@
     <button onclick="addToSession()">addToSession</button>
     <button onclick="getStorageDataSession()">Get Data Session storage</button>
     <button onclick="clearDataSession()">Clear Session storage</button>
+    <br>
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>console.log(window);</code><br><br>
+            <code>function getPageUrl() {</code><br>
+                <code><span class="ps-3"></span>let url = window.location.href;</code><br>
+                <code class="text-success ps-3">
+                    //debugger;
+                </code><br>
+                <code><span class="ps-3"></span>console.log(url);</code><br>
+                <code><span class="ps-3"></span>window.history.forward();</code><br>
+            <code>}</code><br><br>
+            <code>getPageUrl();</code><br><br>
+            <code>function add() {</code><br>
+                <code><span class="ps-3"></span>let result = 4 + 5;</code><br>
+                <code><span class="ps-3"></span>let emp = JSON.stringify({ "id": 111, "age": 33 });</code><br><br>
+                <code class="text-success ps-3">//Data stored in localStorage is available until explicitely deleted</code><br>
+                <code><span class="ps-3"></span>window.localStorage.setItem("result", result);</code><br>
+                <code><span class="ps-3"></span>window.localStorage.setItem("name", "John");//data stored inside localstorage is in string format</code><br>
+                <code><span class="ps-3"></span>localStorage.setItem("empOne", emp);</code><br><br>            
+                <code><span class="ps-3"></span>console.log(result);</code><br>
+            <code>}</code><br><br>
+            <code>function addToSession() {</code><br>
+                <code><span class="ps-3"></span>let result = 4 + 5;</code><br>
+                <code><span class="ps-3"></span>let emp = JSON.stringify({ "id": 111, "age": 33 });</code><br><br>
+            <code class="text-success ps-3">//Data stored in sessionStorage is available until user closes all browser window</code><br>
+                <code><span class="ps-3"></span>window.sessionStorage.setItem("result", result);</code><br>
+                <code><span class="ps-3"></span>window.sessionStorage.setItem("name", "John");//data stored inside sessionStorage is in string format</code><br>
+                <code><span class="ps-3"></span>sessionStorage.setItem("empOne", emp);</code><br><br>
+                <code><span class="ps-3"></span>console.log(result);</code><br>
+            <code>}</code><br><br>
+            <code>
+                function getStorageDataSession() {
+                <br><span class="ps-3"></span>let name = sessionStorage.getItem("name");
+                <br><span class="ps-3"></span>let result = sessionStorage.getItem("result");
+                <br><span class="ps-3"></span>let e = sessionStorage.getItem("empOne");//here e is a string <br>
+                <br><span class="ps-3"></span>console.log(typeof (name) + " name is " + name);
+                <br><span class="ps-3"></span>console.log(typeof (result) + " result is " + result);
+                <br><span class="ps-3"></span>console.log(typeof (e) + " emp one data is " + e); <br>
+                <br><span class="ps-3"></span>console.log(name);
+                <br><span class="ps-3"></span>console.log(parseInt(result));
+                <br><span class="ps-3"></span>let empObj = JSON.parse(e);//converts the string form of emp object to object form
+                <br><span class="ps-3"></span>console.log(typeof (empObj));
+                <br><span class="ps-3"></span>console.log(empObj); <br>
+                <br><span class="ps-3"></span>const { id, age } = empObj;//Object destructing another feature of ES6
+                <br><span class="ps-3"></span>console.log(id);
+                <br><span class="ps-3"></span>console.log(age); <br>
+                }
+            </code>
+        </div>
+        <div class="col-lg-6">
+            <h3>Application</h3>
+            <img src="../images/Screenshot_22.png" alt="">
+        </div>
+    </div>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                <br> function clearDataSession() {
+                <br><span class="ps-3"></span>sessionStorage.clear();
+                <br> } <br>
+                <br>function getStorageData() {
+                <br><span class="ps-3"></span>let name = localStorage.getItem("name");
+                <br><span class="ps-3"></span>let result = localStorage.getItem("result"); 
+                <br><span class="ps-3"></span>let e = localStorage.getItem("empOne");//here e is a string <br>
+                <br><span class="ps-3"></span>console.log(typeof (name) + " name is " + name);
+                <br><span class="ps-3"></span>console.log(typeof (result) + " result is " + result);
+                <br><span class="ps-3"></span>console.log(typeof (e) + " emp one data is " + e); <br>
+                <br><span class="ps-3"></span>console.log(name);
+                <br><span class="ps-3"></span>console.log(parseInt(result));
+                <br><span class="ps-3"></span>let empObj = JSON.parse(e);//converts the string form of emp object to object form
+                <br><span class="ps-3"></span>console.log(typeof (empObj));
+                <br><span class="ps-3"></span>console.log(empObj); <br>
+                <br><span class="ps-3"></span>const { id, age } = empObj;//Object destructing another feature of ES6
+                <br><span class="ps-3"></span>console.log(id);
+                <br><span class="ps-3"></span>console.log(age); <br>
+                <br>} <br>
+                <br>function clearData() {
+                <br><span class="ps-3"></span>localStorage.clear();
+                <br>}
+            </code>
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+    <a href="../index.html" class="btn btn-primary">Back</button></a>
     <script src="./js/objects.js"></script>
 </body>
 </html>

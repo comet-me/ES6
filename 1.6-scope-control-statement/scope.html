@@ -6,11 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scope in JS</title>
+    <link rel="stylesheet" href="../dist/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body>
+<body class="ps-3">
     <h2>Scope of variables in JS</h2>
-
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="row ps-3">
+        <div class="col lg-6">
+            <code class="text-success">
+                //If we declare variable directly inside script tag than it takes global scope
+            </code>
+            <code>
+                var name = "Peter";
+            </code>
+            <code>var name = "John";//variable re-declaration with var keyword does not give error in JS</code><br>
+            <code>        {</code><br>
+            <code>var name2 = "Jane"; // this will take local scope of the function</code><br>
+            <code>console.log(name);</code><br>
+        <code>}</code><br>
+        <code>console.log("Your name " + name);</code><br>
+        <code class="text-success">// console.log(name2); // this will give error becz name2 has scope only within f1 funcation</code><br>
+        </div>
+        <div class="col-lg-6">
+            <img src="../images/Screenshot_16.png" alt="">
+        </div>
+    </div>
+    <div class="row ps-3">
+        <div class="col lg-6">
+            <code>let output = "Hello";</code><br>
+        <code class="text-success">//let output = "Hello2";//will give error as let will not allow redeclaration of same variable</code><br>
+        <code>{</code><br>
+            <code>let output = "New Hello";//but let will allow redeclaration inside a function or any block</code><br>
+            <code>console.log("Inside let " + output);</code><br>
+        <code>}</code><br>
+        <code>console.log("Outside let " + output);</code><br><br>
+        <code>const finalVal = "This cannot be modified, as its a constant";</code><br>
+        <code class="text-success">//finalVal = "I am changing value of constant hence it will give error";</code><br>
+        <code>console.log(finalVal);</code><br>
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+    <a href="../index.html" class="btn btn-primary">Back</button></a>
     <script>
         //If we declare variable directly inside script tag than it takes global scope
         var name = "Peter";

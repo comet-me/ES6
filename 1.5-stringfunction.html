@@ -12,68 +12,72 @@
 <body class="ps-2">
     <h3>String functions</h3>
     <code class="text-success">&#60script&#62</code>
-    <div class="content ps-3">
-        <code>
-            var line = "John is a good boy";
-        </code><br>
-        <code>
-            console.log(line.length);
-        </code><br>
-        <code>
-            console.log(line.indexOf("o")); <span class="text-success">//finds the 1st occurence of the item</span>
-        </code><br>
-        <code>
-            console.log(line.lastIndexOf("o")); <span class="text-success">//finds the last occurence of the item</span>
-        </code>    <br>
-        <code>
-            <!-- console.log(line.slice(2, 6));<span class="text-success">//hn i becz the last index is not included(here its 6th index), slice allows negative index</span> -->
-            console.log(line.slice(2, 6));<span class="text-success">//1st index(2nd) included; last index(6th) excluded; slice allows negative index</span>
-        </code><br>
-        <code>
-            console.log(line.substring(2, 6));<span class="text-success">//hn i becz the last index is not included(here its 6th index)</span>
-        </code><br>
-        <code>
-            console.log(line.substr(2, 7)); <span class="text-success">//2nd parameter is length, here it means 7 characters starting from index 2 and including index 2</span>
-        </code><br>
-        <code>
-            console.log(line.toUpperCase());
-        </code><br>
-        <code>
-            console.log(line.toLowerCase());
-        </code>    <br>
-        <code>
-            var data = "   Today is a good day to        outside    ";
-        </code>    <br>
-        <code>
-            console.log(data);
-        </code><br>
-        <code>
-            console.log(data.trim()); <span class="text-success">//removes leading and trailing spaces</span>
-        </code><br>
-        <code>
-            console.log(line);
-        </code><br>
-        <code>
-            var result = line.replace("John", "Peter");<span class="text-success">//does not change the original string</span>
-        </code>    <br>
-        <code>
-            console.log(result);
-        </code><br>
-        <code>
-            console.log(line);
-        </code><br>
-        <code>
-            console.log(line.charAt(3));<span class="text-success">//3rd index</span>
-        </code><br>
-        <code>
-            console.log(line[5]);
-        </code>    <br>
-        <code>
-            console.log(line.charCodeAt(3));<span class="text-success">//3rd index item's UTF code</span>
-        </code><br>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                var line = "John is a good boy";
+            </code><br>
+            <code>
+                console.log(line.length);
+            </code><br>
+            <code>
+                console.log(line.indexOf("o")); <span class="text-success">//finds the 1st occurence of the item</span>
+            </code><br>
+            <code>
+                console.log(line.lastIndexOf("o")); <span class="text-success">//finds the last occurence of the item</span>
+            </code>    <br>
+            <code>
+                <!-- console.log(line.slice(2, 6));<span class="text-success">//hn i becz the last index is not included(here its 6th index), slice allows negative index</span> -->
+                console.log(line.slice(2, 6));<span class="text-success">//1st index(2nd) included; last index(6th) excluded; slice allows negative index</span>
+            </code><br>
+            <code>
+                console.log(line.substring(2, 6));<span class="text-success">//hn i becz the last index is not included(here its 6th index)</span>
+            </code><br>
+            <code>
+                console.log(line.substr(2, 7)); <span class="text-success">//2nd parameter is length, here it means 7 characters starting from index 2 and including index 2</span>
+            </code><br>
+            <code>
+                console.log(line.toUpperCase());
+            </code><br>
+            <code>
+                console.log(line.toLowerCase());
+            </code>    <br>
+            <code>
+                var data = "   Today is a good day to        outside    ";
+            </code>    <br>
+            <code>
+                console.log(data);
+            </code><br>
+            <code>
+                console.log(data.trim()); <span class="text-success">//removes leading and trailing spaces</span>
+            </code><br>
+            <code>
+                console.log(line);
+            </code><br>
+            <code>
+                var result = line.replace("John", "Peter");<span class="text-success">//does not change the original string</span>
+            </code>    <br>
+            <code>
+                console.log(result);
+            </code><br>
+            <code>
+                console.log(line);
+            </code><br>
+            <code>
+                console.log(line.charAt(3));<span class="text-success">//3rd index</span>
+            </code><br>
+            <code>
+                console.log(line[5]);
+            </code>    <br>
+            <code>
+                console.log(line.charCodeAt(3));<span class="text-success">//3rd index item's UTF code</span>
+            </code><br>
+        </div>
+        <div class="col-lg-6">
+            <img src="images/Screenshot_6.png" class="ps-2" alt=""><br>
+        </div>
     </div>
     <code class="text-success">&#60script&#62</code><br>
-    <img src="images/Screenshot_6.png" class="ps-2" alt=""><br>
 
 
     <a href="index.html" class="btn btn-primary">Back</button></a>

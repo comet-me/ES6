@@ -6,10 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrays in JS</title>
+    <link rel="stylesheet" href="../dist/bootstrap/dist/css/bootstrap.css">
+
 </head>
 
 <body>
     <h2>Arrays in JS</h2>
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code class="text-success">
+                //Array can keep more than one similar or non-similar items
+            </code><br>
+            <code>let ageArray = [23, 34, 56, 31];</code><code class="text-success">//array of similar items</code><br>
+            <code>let names = ["John", "Peter", "Jane"];</code><br>
+            <code>let salaries = [5687.34, 16868.32, 2868.10];</code><br>
+            <code>let randomArray = [12, "Peter", 5678.99];</code><br>
+            <code>console.log(randomArray);</code><br>
+            <code>console.log(salaries);</code><br>
+            <code class="text-success">//console.log(typeof (salaries));</code><br>
+            <code>console.log(salaries.length);</code><br>
+            <code>salaries = salaries.sort();</code><br>
+            <code>console.log("******salaries after sorting*******");</code><br>
+            <code>console.log(salaries);</code><br>
+            <code>salaries.push(888888.88);//adds new item at end of array</code><br>
+            <code>console.log(salaries);</code><br><br>
+            <code class="text-success">
+                //salaries.splice(salaries.length - 1, 1);//remove the last item
+                <br>//console.log(salaries);
+            </code>
+        </div>
+        <div class="col-lg-6">
+            <img src="../images/Screenshot_18.png" alt="">
+        </div>
+    </div>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>console.log("******salaries after addition*******");</code><br>
+            <code class="text-success">//removes the 2 items from 0 d=index and adds 777 and 888 in their place</code><br>
+            <code>console.log(salaries.splice(0, 2, 777, 888));//index, no. of items to be removed or added</code><br>
+            <code>console.log(salaries);</code><br><br>
+            <code>console.log("******salaries after deletion*******");</code><br>
+            <code>console.log(salaries.splice(0, 2));//index, no. of items to be removed or added</code><br>
+            <code>console.log(salaries);</code><br><br>
+            <code>console.log(randomArray[2]);//gives item at 2nd index</code><br>
+            <code>console.log(randomArray[3]);//gives item at 3nd index i.e undefined</code><br><br>
+            <code class="text-success">//let deptArray = new Array(4);//ite will create 4 empty items</code><br>
+            <code>let deptArray = new Array("Phy", "Chem", "Maths");</code><br>
+            <code>console.log(deptArray);</code><br>
+            <code>console.log(deptArray[0]);</code><br><br>
+            <code>console.log(typeof (deptArray));//Array in js is of type object</code><br><br>
+            <code>let student1 = {</code><br>
+                <code>name: "Peter",</code><br>
+                <code>rollNo: 567,</code><br>
+                <code>age: 23</code><br>
+            <code>};</code><br>
+            <code>let student2 = {</code><br>
+                <code>name: "John",</code><br>
+                <code>rollNo: 123,</code><br>
+                <code>age: 31</code><br>
+            <code>};</code><br>
+            <code>let students = [student1, student2]; //Array of objects</code><br>
+            <code>console.log(students);</code><br>
+        </div>
+        <div class="col-lg-6">
+            <img src="../images/Screenshot_19.png" alt="">
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+        <a href="../index.html" class="btn btn-primary">Back</button></a>
 
     <script>
         //Array can keep more than one similar or non-similar items
