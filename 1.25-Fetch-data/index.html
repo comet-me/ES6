@@ -5,11 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetch data from API</title>
+    <link rel="stylesheet" href="../dist/bootstrap/dist/css/bootstrap.css">
 </head>
-<body>
+<body class="ps-3">
     <h2>Fetch all post data from API</h2>
     <button onclick="getPosts()">Get All Posts</button>
     <div id="allPosts"></div>
+    <code class="text-success">
+        &#60script&#62
+    </code>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                <br> const getPosts = () => {
+    
+                <br><span class="ps-2"></span>let fetchPosts = fetch("https://jsonplaceholder.typicode.com/posts");
+                <br><span class="ps-2"></span>let allPostTitle = '';
+                
+                <br><span class="ps-2"></span>fetchPosts.then((response) => {
+                <br><span class="ps-3"></span>    response.json().then((jsonData) => {
+                <br><span class="ps-3 text-success">        //console.log(jsonData);</span>
+                <br><span class="ps-3"></span>        for (let i = 0; i < jsonData.length; i++) {
+                <br><span class="ps-4"></span>            let post = jsonData[i];
+                <br><span class="ps-4 text-success">            //debugger;</span>
+                <br><span class="ps-4 text-success">            //console.log(post.title);</span>
+                <br><span class="ps-4"></span>            allPostTitle = allPostTitle + ` &#60strong&#62Post title:&#60/strong&#62 ${post.title} &#60br&#62 &#60strong&#62Post body:&#60/strong&#62 ${post.body} &#60br&#62 &#60hr&#62`;
+                <br><span class="ps-3"></span>        }
+                <br><span class="ps-3"></span>        document.querySelector("#allPosts").innerHTML = allPostTitle;
+                <br><span class="ps-2"></span>    });
+                <br><span class="ps-2"></span>});
+                <br> }
+            </code>
+        </div>
+        <div class="col-lg-6">
+            <h3>Network Source Info</h3>
+            <img src="../images/Screenshot_25.png" alt="">
+        </div>
+    </div>
+    <code class="text-success">
+        &#60/script&#62
+    </code><br>
+    <a href="../index.html" class="btn btn-primary">Back</button></a>
     <script src="./main.js"></script>
 </body>
 </html>
