@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title><link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="ps-3">
+    <h3>JavaScript Display Possibilities</h3>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                window.alert(); <span class="text-success">//Writing into an alert box</span>
+            </code><br>
+            <code>
+                document.write(); <span class="text-success">//Writing into the HTML output</span>
+            </code><br>
+            <code>
+                document.getElementById("demo").innerHTML = "Some text here"; <span class="text-success">//writing into an HTML element</span>
+            </code><br>
+            <code>
+                console.log(); <span class="text-success">//Writing into the browser console</span>
+            </code>
+        </div>
+    </div>
+    <div class="row ps-3">
+        <div class="col-lg-3">
+            <h3>Window alert</h3>
+            <code class="text-success">
+                &#60script&#62
+            </code><br>
+            <code>window.alert(5+6);</code><br>
+            <code class="text-success">
+                &#60/script&#62
+            </code>
+        </div>
+        <div class="col-lg-3">
+            <h3>Document Write</h3>
+            <code class="text-success">
+                &#60script&#62
+            </code><br>
+            <code>document.write(5+6);</code><br>
+            <code class="text-success">
+                &#60/script&#62
+            </code><br>
+        </div>
+        <div class="col-lg-3">
+            <h3>Document Write</h3>
+            <code class="text-success">
+                &#60script&#62
+            </code><br>
+            <code>
+                &#60button onclick="document.write(5+6)"&#62Try it&#60/button&#62
+            </code><br>
+            <code class="text-success">
+                &#60/script&#62
+            </code>
+        </div>
+        <div class="col-lg-3">
+            <h3>Inner HTML</h3>
+            <code>
+                &#60p&#62My first paragraph&#60/p&#62 <br>
+                &#60p id="demo"&#62&#60/p&#62
+            </code><br>
+            <code class="text-success">
+                &#60script&#62
+            </code><br>
+            <code>
+                document.getELementById("demo").innerHTML = 5+6;
+            </code><br>
+            <code class="text-success">
+                &#60/script&#62
+            </code>
+        </div>
+    </div>
+    <div class="row ps-3">
+        <div class="col-lg-3">
+            <h3>JavaScript Tips</h3>
+            <ul>
+                <li>if a javascript statement does not fit on one line, the best place to break it,
+                    is after an operator:
+                </li>
+                <code>
+                    document.getElementById("demo").innerHTML = <br>
+                    "Hello Buddy";
+                </code>
+                <li>
+                    Semicolons separate JavaScript statements, semicolon is not required
+                    but highly recommended.
+                </li>
+                <li>JavaScript ignores multiple spaces, you can add white space to your script 
+                    to make it more readable. A good practice is to put spaces around operator ( = + - * / );
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <ul>
+                <li>
+                    JavaScript statements can be grouped together in code blocks, inside curly brackets {..} <br>
+                    One place you will find statements grouped together in blocks, are in JavaScript functions. <br>
+                    <code>
+                        function myFunction () { <br>
+                            document.getElementById("demo").innerHTML = "Hello Buddy"; <br>
+                        } <br>
+                    </code>
+                </li>
+                <li>
+                    General rules for constructing names for variables (unique identifiers) are: <br>
+                    Name can contain letters, digits, underscores, and dollar signs. <br>
+                    Names must begin with a letter <br>
+                    Names can also begin with $ and _ <br>
+                    Names are case sensitive
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a href="index.html" class="btn btn-primary">Back</button></a>
+</body>
+</html>
