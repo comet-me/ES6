@@ -31,6 +31,11 @@
                 console.log(line.slice(2, 6));<span class="text-success">//1st index(2nd) included; last index(6th) excluded; slice allows negative index</span>
             </code><br>
             <code>
+                console.log(line.slice(-3, -1)); <span class="text-success">//bo becz 1st index is excluded(-3), 2nd index (-1) is included; starting from right to left
+                    ; if you omit the 2nd parameter, the output will become <strong>boy</strong>
+                </span>
+            </code><br>
+            <code>
                 console.log(line.substring(2, 6));<span class="text-success">//hn i becz the last index is not included(here its 6th index)</span>
             </code><br>
             <code>
@@ -74,7 +79,9 @@
             </code><br>
         </div>
         <div class="col-lg-6">
-            <img src="images/Screenshot_6.png" class="ps-2" alt=""><br>
+            <img src="images/Screenshot_6.png" class="ps-2" alt=""><br><br>
+            <h3>JavaScript String Methods</h3>
+            <p class="lead">String methods help you to work with strings</p>
         </div>
     </div>
     <code class="text-success">&#60script&#62</code><br>
@@ -89,6 +96,7 @@
         console.log(line.lastIndexOf("o")); //finds the last occurence of the item
 
         console.log(line.slice(2, 6));//hn i becz the last index is not included(here its 6th index), slice allows negative index
+        console.log(line.slice(-3, -1));//bo the 1st index is excluded; 2nd index is included.
         console.log(line.substring(2, 6));//hn i becz the last index is not included(here its 6th index)
         console.log(line.substr(2, 7));//2nd parameter is length, here it means 7 characters starting from index 2 and including index 2
 
