@@ -14,53 +14,88 @@
     <code class="text-success">
         &#60script&#62
     </code>
-    <div class="content ps-3">
-        <code>
-            var name = "John Doe";
-        </code><br>
-        <code>
-            console.log(`Your name is ${name.length} characters in length`);
-        </code><br>
-        <code>
-            var msg = `<span class="text-primary">${</span>name<span class="text-primary">}</span> is a good person!`;
-        </code><br>
-        <code>
-            console.log(msg);
-        </code><br>
-        <code>
-            var description = 'this is a "good" book';
-        </code><br>
-        <code>
-            console.log(description);
-        </code><br>
-        <code>
-            description = "this is a 'good' book";
-        </code><br>
-        <code>
-            console.log(description);
-        </code><br>
-        <code>
-            description = `this is a 'good' "book"`;
-        </code><br>
-        <code>
-            console.log(description);
-        </code><br>
-        <code>
-            description = "this\tis a \\n'good book'";
-        </code><br>
-        <code>
-            console.log(description);
-        </code><br>
+    <div class="row ps-3">
+        <div class="col-lg-6">
+            <code>
+                var name = "John Doe";
+            </code><br>
+            <code>
+                console.log(`Your name is ${name.length} characters in length`);
+            </code><br>
+            <code>
+                var msg = `<span class="text-primary">${</span>name<span class="text-primary">}</span> is a good person!`;
+            </code><br>
+            <code>
+                console.log(msg);
+            </code><br>
+            <code>
+                var description = 'this is a "good" book';
+            </code><br>
+            <code>
+                console.log(description);
+            </code><br>
+            <code>
+                description = "this is a 'good' book";
+            </code><br>
+            <code>
+                console.log(description);
+            </code><br>
+            <code>
+                description = `this is a 'good' "book"`;
+            </code><br>
+            <code>
+                console.log(description);
+            </code><br>
+            <code>
+                description = "this\tis a \\n'good book'";
+            </code><br>
+            <code>
+                console.log(description);
+            </code><br><br>
+            <ul>
+                <li>\t creates 5 spaces</li>
+                <li>\n create a new line</li>
+                <li>\\n will only print <span class="text-danger">backslash n</span></li>
+            </ul>
+            <img src="images/Screenshot_5.png" alt="Screenshot 5" class="ps-3"><br>
+        </div>
+        <div class="col-lg-6">
+            <h3>Common issue can be encounter</h3>
+            <code>var y = "We are the so-called "Vikings" from the north"</code>
+            <p>The string will be chopped to <code>We are the so-called</code></p>
+            <h3>Here's the 3 solutions you can choose:</h3>
+            <ol>
+                <li>
+                    <code>var y = 'We are the so-called "Vikings" from the north'</code>
+                </li>
+                <li>
+                    <code>var y = `We are the so-called "Vikings" from the north`</code>
+                </li>
+                <li>
+                    <code>
+                        var y = "We are the so-called \"Vikings\" from the north"
+                    </code>
+                </li>
+            </ol>
+            <p class="lead">The escape character (\) turns special characters into string character</p>
+            <p>i.e <code>var x = 'It\'s alright';</code></p>
+            <p>Output: <code>It's alright</code></p>
+            <h4>Code Outputs when paired with escape character:</h4>
+            <ul>
+                <li>\' single quotes</li>
+                <li>\" double quotes</li>
+                <li>\\ backslash</li>
+                <li>\n new line</li>
+                <li>\r carriage return</li>
+                <li>\t tab</li>
+                <li>\b backspace</li>
+                <li>\f form feed</li>
+            </ul>
+        </div>
     </div>
     <code class="text-success">
         &#60/script&#62
     </code><br>
-    <ul>
-        <li>\t creates 5 spaces</li>
-        <li>\n create a new line</li>
-        <li>\\n will only print <span class="text-danger">backslash n</span></li>
-    </ul>
-    <img src="images/Screenshot_5.png" alt="Screenshot 5" class="ps-3"><br><br>
     <a href="index.html" class="btn btn-primary">Back</button></a>
     <script>
         var name = "John Doe";
