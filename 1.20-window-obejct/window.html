@@ -37,7 +37,7 @@
                 <code><span class="ps-3"></span>let emp = JSON.stringify({ "id": 111, "age": 33 });</code><br><br>
                 <code class="text-success ps-3">//Data stored in localStorage is available until explicitely deleted</code><br>
                 <code><span class="ps-3"></span>window.localStorage.setItem("result", result);</code><br>
-                <code><span class="ps-3"></span>window.localStorage.setItem("name", "John");//data stored inside localstorage is in string format</code><br>
+                <code><span class="ps-3"></span>window.localStorage.setItem("name", "John");<span class="text-success">//data stored inside localstorage is in string format</span></code><br>
                 <code><span class="ps-3"></span>localStorage.setItem("empOne", emp);</code><br><br>            
                 <code><span class="ps-3"></span>console.log(result);</code><br>
             <code>}</code><br><br>
@@ -46,7 +46,7 @@
                 <code><span class="ps-3"></span>let emp = JSON.stringify({ "id": 111, "age": 33 });</code><br><br>
             <code class="text-success ps-3">//Data stored in sessionStorage is available until user closes all browser window</code><br>
                 <code><span class="ps-3"></span>window.sessionStorage.setItem("result", result);</code><br>
-                <code><span class="ps-3"></span>window.sessionStorage.setItem("name", "John");//data stored inside sessionStorage is in string format</code><br>
+                <code><span class="ps-3"></span>window.sessionStorage.setItem("name", "John");<span class="text-success">//data stored inside sessionStorage is in string format</span></code><br>
                 <code><span class="ps-3"></span>sessionStorage.setItem("empOne", emp);</code><br><br>
                 <code><span class="ps-3"></span>console.log(result);</code><br>
             <code>}</code><br><br>
@@ -54,16 +54,16 @@
                 function getStorageDataSession() {
                 <br><span class="ps-3"></span>let name = sessionStorage.getItem("name");
                 <br><span class="ps-3"></span>let result = sessionStorage.getItem("result");
-                <br><span class="ps-3"></span>let e = sessionStorage.getItem("empOne");//here e is a string <br>
+                <br><span class="ps-3"></span>let e = sessionStorage.getItem("empOne");<span class="text-success">//here e is a string</span> <br>
                 <br><span class="ps-3"></span>console.log(typeof (name) + " name is " + name);
                 <br><span class="ps-3"></span>console.log(typeof (result) + " result is " + result);
                 <br><span class="ps-3"></span>console.log(typeof (e) + " emp one data is " + e); <br>
                 <br><span class="ps-3"></span>console.log(name);
                 <br><span class="ps-3"></span>console.log(parseInt(result));
-                <br><span class="ps-3"></span>let empObj = JSON.parse(e);//converts the string form of emp object to object form
+                <br><span class="ps-3"></span>let empObj = JSON.parse(e);<span class="text-success">//converts the string form of emp object to object form</span>
                 <br><span class="ps-3"></span>console.log(typeof (empObj));
                 <br><span class="ps-3"></span>console.log(empObj); <br>
-                <br><span class="ps-3"></span>const { id, age } = empObj;//Object destructing another feature of ES6
+                <br><span class="ps-3"></span>const { id, age } = empObj;<span class="text-success">//Object destructing another feature of ES6</span>
                 <br><span class="ps-3"></span>console.log(id);
                 <br><span class="ps-3"></span>console.log(age); <br>
                 }
@@ -83,16 +83,16 @@
                 <br>function getStorageData() {
                 <br><span class="ps-3"></span>let name = localStorage.getItem("name");
                 <br><span class="ps-3"></span>let result = localStorage.getItem("result"); 
-                <br><span class="ps-3"></span>let e = localStorage.getItem("empOne");//here e is a string <br>
+                <br><span class="ps-3"></span>let e = localStorage.getItem("empOne");<span class="text-success">//here e is a string</span> <br>
                 <br><span class="ps-3"></span>console.log(typeof (name) + " name is " + name);
                 <br><span class="ps-3"></span>console.log(typeof (result) + " result is " + result);
                 <br><span class="ps-3"></span>console.log(typeof (e) + " emp one data is " + e); <br>
                 <br><span class="ps-3"></span>console.log(name);
                 <br><span class="ps-3"></span>console.log(parseInt(result));
-                <br><span class="ps-3"></span>let empObj = JSON.parse(e);//converts the string form of emp object to object form
+                <br><span class="ps-3"></span>let empObj = JSON.parse(e);<span class="text-success">//converts the string form of emp object to object form</span>
                 <br><span class="ps-3"></span>console.log(typeof (empObj));
                 <br><span class="ps-3"></span>console.log(empObj); <br>
-                <br><span class="ps-3"></span>const { id, age } = empObj;//Object destructing another feature of ES6
+                <br><span class="ps-3"></span>const { id, age } = empObj;<span class="text-success">//Object destructing another feature of ES6</span>
                 <br><span class="ps-3"></span>console.log(id);
                 <br><span class="ps-3"></span>console.log(age); <br>
                 <br>} <br>

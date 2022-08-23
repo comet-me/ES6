@@ -36,6 +36,23 @@
             <code>
                 console.log(date1);
             </code><code class="text-success">// Jan 01 1970 01:00:05</code>
+            <code class="text-success">//let date2 = new Date(year, month, day, hour, minutes, seconds, milliseconds);</code><br>
+            <code class="text-success">
+                //Wed Nov 04 2099 09:45:22
+            </code><br><br>
+            <code>let date3 = new Date(2099, 10, 4, 9, 45, 22, 88);</code><code class="text-success">//month starts from 0 to 11</code><br>
+            <code>console.log(date3);</code><br><br>
+            <code>let startTime = Date.now();</code><br>
+            <code>console.log(date3.getFullYear());</code><br>
+            <code>console.log(date3.getMonth());</code><code class="text-success">//0 to 11</code><br>
+            <code>console.log(date3.getDate());</code><code class="text-success">//actual date, here its 4th</code><br>
+            <code>console.log(date3.getDay());</code><code class="text-success">//day of the Week, 3-wednesday</code><br>
+            <code>console.log(date3.getHours());</code><br>
+            <code>console.log(date3.getMinutes());</code><br>
+            <code>console.log(date3.getSeconds());</code><br>
+            <code>
+                console.log(date3.getMilliseconds());
+            </code>
         </div>
         <div class="col-lg-6">
            <img src="images/Screenshot_13.png" alt="">
@@ -43,45 +60,27 @@
     </div>
     <div class="row ps-3">
         <div class="col-lg-6">
-            <code class="text-success">//let date2 = new Date(year, month, day, hour, minutes, seconds, milliseconds);</code><br>
-            <code class="text-success">
-                //Wed Nov 04 2099 09:45:22
-            </code><br>
-        <code>let date3 = new Date(2099, 10, 4, 9, 45, 22, 88);</code><code class="text-success">//month starts from 0 to 11</code><br>
-        <code>console.log(date3);</code><br><br>
-        <code>let startTime = Date.now();</code><br>
-        <code>console.log(date3.getFullYear());</code><br>
-        <code>console.log(date3.getMonth());</code><code class="text-success">//0 to 11</code><br>
-        <code>console.log(date3.getDate());</code><code class="text-success">//actual date, here its 4th</code><br>
-        <code>console.log(date3.getDay());</code><code class="text-success">//day of the Week, 3-wednesday</code><br>
-        <code>console.log(date3.getHours());</code><br>
-        <code>console.log(date3.getMinutes());</code><br>
-        <code>console.log(date3.getSeconds());</code><br>
-        <code>
-            console.log(date3.getMilliseconds());
-        </code>
-        </div>
-        <div class="col-lg-6">
             <code>let formattedDate = `Date is <span class="text-primary">${</span>date3.getDate()<span class="text-primary">}</span>/<span class="text-primary">${</span>date3.getMonth() + 1<span class="text-primary">}</span>/<span class="text-primary">${</span>date3.getFullYear()<span class="text-primary">}</span>`;</code><br>
-        <code>document.querySelector("#formattedDate").innerHTML = formattedDate;</code><br><br>
-        <code class="text-success">//UTC - coorcinated universal time - London</code><br>
-        <code>let date4 = new Date();</code><br>
-        <code>console.log(date4.getHours());</code><code class="text-success">//ur local hours now</code><br>
-        <code>console.log(date4.getUTCHours());</code><code class="text-success">//current hour in London</code><br><br>
-        <code>console.log(date4);</code><br>
-        <code>date4.setDate(38);</code><code class="text-success">//add 5 to the Day part of date</code><br>
-        <code>console.log(date4);</code><br><br>
-        <code>let endTime = Date.now();</code><br>
-        <code>
-            console.log("Time take to execute the code in ms is: " + (endTime - startTime));
-        </code><br><br>
-        <code>let timeElapsedInMs = Date.now();</code><br>
-        <code>console.log(timeElapsedInMs);</code>
+            <code>document.querySelector("#formattedDate").innerHTML = formattedDate;</code><br><br>
+            <code class="text-success">//UTC - coorcinated universal time - London</code><br>
+            <code>let date4 = new Date();</code><br>
+            <code>console.log(date4.getHours());</code><code class="text-success">//ur local hours now</code><br>
+            <code>console.log(date4.getUTCHours());</code><code class="text-success">//current hour in London</code><br><br>
+            <code>console.log(date4);</code><br>
+            <code>date4.setDate(38);</code><code class="text-success">//add 5 to the Day part of date</code><br>
+            <code>console.log(date4);</code><br><br>
+            <code>let endTime = Date.now();</code><br>
+            <code>
+                console.log("Time take to execute the code in ms is: " + (endTime - startTime));
+            </code><br><br>
+            <code>let timeElapsedInMs = Date.now();</code><br>
+            <code>console.log(timeElapsedInMs);</code><br>
         </div>
     </div>
     <code class="text-success">
         &#60/script&#62
     </code><br>
+    
     <a href="index.html" class="btn btn-primary">Back</button></a>
     <script>
         setInterval(function test() {

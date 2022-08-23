@@ -32,56 +32,58 @@
     <div id="footer" class="layout">
         @All rights reserved.
     </div>
-    <code class="text-success">
-        &#60script&#62
-    </code>
     <div class="row ps-3">
+        <code class="text-success">
+            &#60script&#62
+        </code>
         <div class="col-lg-6">
-            <code>
-                let mainElement = document.getElementById('main');
-            </code><br>
-            <code>
-                console.log(mainElement);
-            </code><br>
-            <code>
-                let fullName = document.getElementById('fullName');
-            </code><br>
-            <code>
-                console.log(fullName.value);
-            </code><br>
-            <code>
-                let rightElement = document.getElementById('right');
-            </code><br>
-            <code>
-                console.log(rightElement);
-            </code><br>
-            <code>
-                console.log(rightElement.innerHTML);
-            </code><br>
-            <code>
-                let layoutElements = document.getElementsByClassName('layout');
-            </code><br>
-            <code>
-                console.log(layoutElements);
-            </code><br>
-            <code>
-                console.log(layoutElements[2]);
-            </code><br>
-            <code>
-                let tagElements = document.getElementsByTagName('li');
-            </code><br>
-            <code>
-                console.log(tagElements);
-            </code><br>
-            <code>
-                console.log(tagElements[2]);
-            </code><br>
-            <code>
-                console.log(tagElements[2].innerHTML);
-            </code><br>
-            <code>
-                tagElements[2].innerHTML = "MyOrders";
-            </code><br>
+            <div class="insideScript ps-3">
+                <code>
+                    let mainElement = document.getElementById('main');
+                </code><br>
+                <code>
+                    console.log(mainElement);
+                </code><br>
+                <code>
+                    let fullName = document.getElementById('fullName');
+                </code><br>
+                <code>
+                    console.log(fullName.value);
+                </code><br>
+                <code>
+                    let rightElement = document.getElementById('right');
+                </code><br>
+                <code>
+                    console.log(rightElement);
+                </code><br>
+                <code>
+                    console.log(rightElement.innerHTML);
+                </code><br>
+                <code>
+                    let layoutElements = document.getElementsByClassName('layout');
+                </code><br>
+                <code>
+                    console.log(layoutElements);
+                </code><br>
+                <code>
+                    console.log(layoutElements[2]);
+                </code><br>
+                <code>
+                    let tagElements = document.getElementsByTagName('li');
+                </code><br>
+                <code>
+                    console.log(tagElements);
+                </code><br>
+                <code>
+                    console.log(tagElements[2]);
+                </code><br>
+                <code>
+                    console.log(tagElements[2].innerHTML);
+                </code><br>
+                <code>
+                    tagElements[2].innerHTML = "MyOrders";
+                </code><br>
+            </div>
         </div>
         <div class="col-lg-6">
             <code class="text-success">
@@ -107,16 +109,21 @@
     </div>
     <div class="row ps-3">
         <div class="col-lg-6">
-            <code>
-                let selectorQuery = document.querySelectorAll('#left > .left-menu > li');<span class="text-success">//returns all the matching instance</span> 
-            </code><br>
-            <code>
-                console.log(selectorQuery);
-            </code><br>
-            <code>
-                selectorQuery[1].style.color = 'red';<span class="text-success">//makes the font color to red</span>
-            </code><br>
+            <div class="insideScript ps-3">
+                <code>
+                    let selectorQuery = document.querySelectorAll('#left > .left-menu > li');<span class="text-success">//returns all the matching instance</span> 
+                </code><br>
+                <code>
+                    console.log(selectorQuery);
+                </code><br>
+                <code>
+                    selectorQuery[1].style.color = 'red';<span class="text-success">//makes the font color to red</span>
+                </code><br>
+            </div>
         </div>
+        <code class="text-success">
+            &#60/script&#62
+        </code><br>
         <div class="col-lg-6">
             <img src="images/Screenshot_11.png" alt="">
         </div>
@@ -129,17 +136,10 @@
                     <li>content</li>
                     <code>document.getElementById("demo").innerHTML = "Some text here";</code>
                     <code></code>
-                    <li></li>
                 </ul>
             </h4>
         </div>
-        <div class="col-lg-6">
-
-        </div>
-    </div>
-    <code class="text-success">
-        &#60/script&#62
-    </code><br>
+    </div><br>
     <a href="index.html" class="btn btn-primary">Back</button></a>
 
     <script>
