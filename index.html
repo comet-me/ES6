@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is my JS Sample/Guide</title>
     <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style/mystyle.css">
 </head>
 <body class="ps-4">
     <h1 class="pt-2 text-center">Welcome Buddy!</h1><br>
@@ -64,6 +65,51 @@
                 <p><a href="1.25-Fetch-data/index.html" target="">Fetch Data</a></p>
                 <p><a href="1.26-Display.html" target="">Display</a></p>
             </div>
+        </div>
+    </div>
+    <div class="actualSampleProject">
+        <h1>Real World Example</h1>
+        <h2>Sample One</h2>
+        <img src="images/actualproject.gif">
+        <div id="apContent">
+            <code>
+                &#60script&#62 </br>
+            </code>
+            <code>
+                &nbsp;var tablinks = document.getElementsByClassName("tab-links"); </br>
+            </code>
+            <code>
+                &nbsp;var tabcontents = document.getElementsByClassName("tab-contents"); <br>
+            </code>
+            <code>
+                &nbsp;function opentab(skillsExpEdu) <span class="text-success">{</span> </br>
+            </code>
+            <code>
+                &nbsp;&nbsp;for(tablinkz of tablinks)<span class="text-success">{</span> </br>
+            </code>
+            <code>
+                &nbsp;&nbsp;&nbsp;tablinkz.classList.remove("active-link"); </br>
+            </code>
+            <code>
+                &nbsp;&nbsp;<span class="text-success">}</span></br>
+            </code>
+            <code>
+                &nbsp;&nbsp;for(tabcontent of tabcontents)<span class="text-success">{</span> </br>
+            </code>
+            <code>
+                &nbsp;&nbsp;&nbsp;tabcontent.classList.remove("active-tab"); </br>
+                &nbsp;&nbsp;<span class="text-success">}</span></br>
+            </code>
+            <code>
+                &nbsp;&nbsp;event.currentTarget.classList.add("active-link"); </br>
+                &nbsp;&nbsp;document.getElementById(skillsExpEdu).classList.add("active-tab");</br>
+                &nbsp;<span class="text-success">}</span> </br>
+                &#60/script&#62
+            </code>
+        </div>
+        <div id="sampleOne">
+            <p>Each content they have an ID: skill,experience, education</p>
+            <p>And have a class of tab-contents</p>
         </div>
     </div>
     <script>

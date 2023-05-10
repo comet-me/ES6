@@ -1,0 +1,27 @@
+.actualSampleProject {
+    width: 90%;
+    padding: 20px 40px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.actualSampleProject h1, .actualSampleProject h2 {
+    text-align: center;
+}
+
+h2 + img {
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+#apContent {
+    margin: auto;
+    border: 2px solid dimgrey;
+}
+
+#sampleOne {
+    text-align: center;
+    background-color: dimgrey;
+    padding: 2em;
+    color: #fff;
+}
